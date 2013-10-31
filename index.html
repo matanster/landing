@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700" media="screen" rel="stylesheet" type="text/css" />
+    <style>
+      /* No content under the fixed bootstrap header. */
+      body {
+        padding-top: 42px;
+      }
+    </style>
+    <link href="stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/tour.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
+    <script data-main="scripts/main" src="scripts/require.js"></script>
+    <!-- script type="text/javascript" src="https://api.filepicker.io/v1/filepicker.js"></script -->
+    <!-- script type='text/javascript'>$(document).ready(function() {filepicker.setKey('A98TZEfEaSi6e7ru2EZnxz');});</script -->
+    <title>Some Name</title>
+  </head>
+  
+  <body>
+    <div class="navbar navbar-fixed-top" id="nav-bar">
+      <div class="navbar-inner">
+        <ul class="nav pull-right">
+          <li>
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container" id="hero-container">
+      <h1 class="heading" id="title">Upload or Select your Article</h1>
+      <h2 class="heading" id="subtitle">we'll get you up to speed quickly</h2>
+      <div>
+        <button class="btn btn-large pull-center">Get Started Now<em>!</em>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    require(['upload']);
+  </script>
+</html>
+
