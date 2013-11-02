@@ -45,3 +45,5 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'dailycred'
+gem 'haml'
+gem 'haml-rails', group: :development

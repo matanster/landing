@@ -1,0 +1,39 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    :css
+      /* No content under the fixed bootstrap header. */
+      body {
+        padding-top: 42px;
+      }
+    %link{:href => "stylesheets/bootstrap.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/bootstrap-responsive.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/common.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/fontawesome.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/project.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/tour.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    /
+      Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
+      <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    %script{"data-main" => "scripts/main", :src => "scripts/require.js"}
+    / script type="text/javascript" src="https://api.filepicker.io/v1/filepicker.js"></script
+    / script type='text/javascript'>$(document).ready(function() {filepicker.setKey('A98TZEfEaSi6e7ru2EZnxz');});</script
+    %title Some Name
+  %body
+    #nav-bar.navbar.navbar-fixed-top
+      .navbar-inner
+        %ul.nav.pull-right
+          %li
+            %a{:href => "#"} Login
+    #hero-container.container
+      %h1#title.heading Upload or Select your Article
+      %h2#subtitle.heading we'll get you up to speed quickly
+      %div
+        %button.btn.btn-large.pull-center
+          Get Started Now
+          %em !
+  :javascript
+    require(['upload']);
